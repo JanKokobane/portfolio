@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.932);
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.863);
+    border-radius: 50px;
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 5%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto; 
+    width: 100%;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+ul li a:hover {
+    color: rgba(255, 94, 0, 0.664);
+}
+
+.section-container {
+    margin: 3rem;
+}
+
+.section-container h2 {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.692);
+    text-shadow: rgb(15, 211, 64);
+    margin-bottom: 0.5rem;
+}
+
+.section-container p {
+    font-family: Arial, narrow;
+    font-weight: 100;
+    font-size: large;
+    margin-bottom: 0.8rem;
+}
+
+.section-container iframe {
+    width: 100%; 
+    height: 400px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#about {
+    padding: 2rem;
+    background-color: #f9f9f92d;
+    text-shadow: #474242;
+}
+
+.about h1 {
+    font-family: "Protest Riot", sans-serif;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.about p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.bio-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.bio img {
+    width: 60px;
+    height: 50px;
+    vertical-align: middle; 
+    margin-right: 5px;
+    margin-top: 0.5rem; 
+    margin-bottom: 1.5rem;
+}
+
+.bio {
+    flex: 6; 
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8; /* Unified line height */
+    color: #333;
+}
+
+.bio ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    display: list-item; /* Kept list-item for proper structure */
+    list-style: none; /* Removes default bullets */
+}
+
+.bio ul li {
+    margin-bottom: 1rem; 
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.bio ul li::before {
+    content: '#';
+    position: absolute;
+    left: 0; 
+    color: #474242;
+    font-size: 1.2rem;
+}
+
+.portfolio-picture {
+    flex: 4; 
+    max-width: 30%;
+    border-radius: 50%;
+    height: 60vh;
+    border: 2px solid rgb(54, 236, 9);
+    margin-top: -2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contact Section */
+.contact-section {
+    background-color: rgb(255, 255, 255);
+    padding: 4rem 2rem;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Protest Riot", sans-serif;
+    margin-bottom: 1rem;
+    color: rgb(43, 42, 41);
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.contact-form {
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -8rem;
+    box-shadow: #0a0303;
+    border: 1px solid black;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    color: var(--text-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    align-content: center;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-dark-color);
+}
+
+
+.footer {
+    background-color: var(--section-bg);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid var(--primary-color);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: opacity 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: inherit; /* Keeps text color from changing */
+}
+
+.footer a i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.footer a:hover i {
+    transform: scale(1.2);
+}
+
+.github-icon {
+    color: #333; 
+}
+
+.linkedin-icon {
+    color: #0077b5; 
+}
+
+.facebook-icon {
+    color: #1877f2; 
+}
+
+.whatsapp-icon {
+    color: #25d366; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        width: 60%;
+        padding: 10px;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .logo {
+        top: 10px;
+        left: 10px;
+        width: 13%;
+    }
+
+    ul {
+        gap: 10px;
+        width: auto;
+        
+    }
+
+    .section-container {
+        margin: 2rem 1rem;
+    }
+
+    .portfolio-picture {
+        max-width: 80%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .bio-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-info {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        margin-top: 0;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        width: 80%;
+        padding: 10px;
+        margin-top: 5rem;
+    }
+}
