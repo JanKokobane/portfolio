@@ -80,9 +80,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img{
-  width: 10%; 
+  width: 6%; 
+  border-radius: 50%;
   margin-top: -0.8rem;
-  margin-bottom: -0.8rem;
+  margin-bottom: -1.2rem;
+  border: 2px solid skyblue;
 }
 
 .nav-links {
@@ -787,7 +789,7 @@ fieldset {
     padding: 0.75rem;
     border: 1px solid #dcdee0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.87);
-    border-radius: 50px;
+    border-radius: 10px;
     transition: var(--transition);
 }
 
@@ -821,6 +823,9 @@ fieldset {
     text-decoration: none;
 }
 
+.social-icons {
+  color: white;
+}
 
 /* Footer */
 .main-footer {
